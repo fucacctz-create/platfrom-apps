@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// Force static for mobile builds (returns stub response)
+// For full API functionality, deploy to a server environment
+export const dynamic = "force-static";
+
 // Types for the API
 interface MainPart {
   id: string;
